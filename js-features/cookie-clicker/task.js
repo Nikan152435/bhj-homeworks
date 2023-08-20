@@ -1,4 +1,4 @@
-const link = document.getElenentById("link");
+const link = document.getElementById("link");
 link.onclick = function(){
     console.log(`Клик`);
     return false;
