@@ -7,14 +7,14 @@ dropdownValue.addEventListener('click', function(e) {
   dropdownList.classList.add('dropdown__list_active');
 });
 
-console.log(dropdownValue);
 
-// dropdownItems.forEach(item => 
-//   item.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     dropdownValue.textContent = this.textContent;
-//     dropdownList.classList.remove('.dropdownlist_active');        
-//   })
-// );
 
-//
+dropdownItems.forEach(item => 
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+    dropdownValue.textContent = this.textContent;
+    dropdownList.classList.remove('.dropdownlist_active');        
+  })
+);
+
+//console.log(dropdownValue);
