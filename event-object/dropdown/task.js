@@ -1,7 +1,7 @@
 const dropdownValue = document.querySelector('.dropdown__value');
 const dropdownItems = Array.from(document.querySelectorAll('.dropdown__item'));
 const dropdownList = document.querySelector('.dropdown__list');
-
+const closest = dropdownValue.closest(".dropdown__value");
 
 dropdownValue.addEventListener('click', function(e) {
   dropdownList.classList.add('dropdown__list_active');
@@ -18,3 +18,5 @@ dropdownItems.forEach(item =>
 );
 
 //console.log(dropdownValue);
+
+//Разобралась полностью
